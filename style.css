@@ -1,0 +1,117 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+header .subtitle {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+header .line {
+  width: 80px;
+  height: 4px;
+  background-color: #e74c3c;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+/* Card Styling */
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid #34495e;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  border-top-color: #e74c3c;
+}
+
+.card-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  user-select: none;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-right: 40px; /* Supaya tidak tabrakan dengan nomor belakang */
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Footer & Note */
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+blockquote {
+  background-color: #ecf0f1;
+  border-left: 5px solid #e74c3c;
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #34495e;
+}
+
+/* Responsive Coding */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  body {
+    padding: 20px 10px;
+  }
+}
